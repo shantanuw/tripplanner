@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="DBXVGJN1" name="com.tripplanner.taglibs.DateTagLibTests" tests="1" time="0.046" timestamp="2011-10-27T16:02:11">
+  <properties />
+  <testcase classname="com.tripplanner.taglibs.DateTagLibTests" name="testThisYear" time="0.043">
+    <error message="No such property: out for class: com.tripplanner.taglibs.DateTagLib" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: out for class: com.tripplanner.taglibs.DateTagLib
+	at com.tripplanner.taglibs.DateTagLib$_closure1.doCall(DateTagLib.groovy:6)
+	at com.tripplanner.taglibs.DateTagLib$_closure1.doCall(DateTagLib.groovy)
+	at com.tripplanner.taglibs.DateTagLibTests.testThisYear(DateTagLibTests.groovy:19)
+	at TestApp$_run_closure4.doCall(TestApp:271)
+	at TestApp$_run_closure4.call(TestApp)
+	at TestApp$_run_closure2.doCall(TestApp:228)
+	at TestApp$_run_closure1_closure21.doCall(TestApp:187)
+	at TestApp$_run_closure1.doCall(TestApp:174)
+	at TestApp$_run_closure1.doCall(TestApp:82)
+	at gant.Gant$_dispatch_closure5.doCall(Gant.groovy:381)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy:415)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy)
+	at gant.Gant.withBuildListeners(Gant.groovy:427)
+	at gant.Gant.this$2$withBuildListeners(Gant.groovy)
+	at gant.Gant$this$2$withBuildListeners.callCurrent(Unknown Source)
+	at gant.Gant.dispatch(Gant.groovy:415)
+	at gant.Gant.this$2$dispatch(Gant.groovy)
+	at gant.Gant.invokeMethod(Gant.groovy)
+	at gant.Gant.executeTargets(Gant.groovy:590)
+	at gant.Gant.executeTargets(Gant.groovy:589)
+</error>
+  </testcase>
+  <system-out><![CDATA[--Output from testThisYear--
+]]></system-out>
+  <system-err><![CDATA[--Output from testThisYear--
+]]></system-err>
+</testsuite>

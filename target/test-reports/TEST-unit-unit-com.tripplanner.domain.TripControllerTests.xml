@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="DBXVGJN1" name="com.tripplanner.domain.TripControllerTests" tests="1" time="0.112" timestamp="2011-10-27T16:02:11">
+  <properties />
+  <testcase classname="com.tripplanner.domain.TripControllerTests" name="testSomething" time="0.096" />
+  <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+  <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+</testsuite>

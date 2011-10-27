@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="DBXVGJN1" id="0" name="AirlineControllerTests" package="com.tripplanner.domain" tests="1" time="0.553" timestamp="2011-10-27T16:02:10">
+      <properties />
+
+      <testcase classname="com.tripplanner.domain.AirlineControllerTests" name="testSomething" time="0.54" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="DBXVGJN1" id="1" name="AirlineTests" package="com.tripplanner.domain" tests="1" time="0.0050" timestamp="2011-10-27T16:02:11">
+      <properties />
+
+      <testcase classname="com.tripplanner.domain.AirlineTests" name="testSomething" time="0.0020" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="DBXVGJN1" id="2" name="TripControllerTests" package="com.tripplanner.domain" tests="1" time="0.112" timestamp="2011-10-27T16:02:11">
+      <properties />
+
+      <testcase classname="com.tripplanner.domain.TripControllerTests" name="testSomething" time="0.096" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="DBXVGJN1" id="3" name="TripTests" package="com.tripplanner.domain" tests="1" time="0.01" timestamp="2011-10-27T16:02:11">
+      <properties />
+
+      <testcase classname="com.tripplanner.domain.TripTests" name="testSomething" time="0.0050" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="0" hostname="DBXVGJN1" id="4" name="DateTagLibTests" package="com.tripplanner.taglibs" tests="1" time="0.046" timestamp="2011-10-27T16:02:11">
+      <properties />
+
+      <testcase classname="com.tripplanner.taglibs.DateTagLibTests" name="testThisYear" time="0.043">
+          <error message="No such property: out for class: com.tripplanner.taglibs.DateTagLib" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: out for class: com.tripplanner.taglibs.DateTagLib
+	at com.tripplanner.taglibs.DateTagLib$_closure1.doCall(DateTagLib.groovy:6)
+	at com.tripplanner.taglibs.DateTagLib$_closure1.doCall(DateTagLib.groovy)
+	at com.tripplanner.taglibs.DateTagLibTests.testThisYear(DateTagLibTests.groovy:19)
+	at TestApp$_run_closure4.doCall(TestApp:271)
+	at TestApp$_run_closure4.call(TestApp)
+	at TestApp$_run_closure2.doCall(TestApp:228)
+	at TestApp$_run_closure1_closure21.doCall(TestApp:187)
+	at TestApp$_run_closure1.doCall(TestApp:174)
+	at TestApp$_run_closure1.doCall(TestApp:82)
+	at gant.Gant$_dispatch_closure5.doCall(Gant.groovy:381)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy:415)
+	at gant.Gant$_dispatch_closure7.doCall(Gant.groovy)
+	at gant.Gant.withBuildListeners(Gant.groovy:427)
+	at gant.Gant.this$2$withBuildListeners(Gant.groovy)
+	at gant.Gant$this$2$withBuildListeners.callCurrent(Unknown Source)
+	at gant.Gant.dispatch(Gant.groovy:415)
+	at gant.Gant.this$2$dispatch(Gant.groovy)
+	at gant.Gant.invokeMethod(Gant.groovy)
+	at gant.Gant.executeTargets(Gant.groovy:590)
+	at gant.Gant.executeTargets(Gant.groovy:589)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testThisYear--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testThisYear--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
