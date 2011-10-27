@@ -64,6 +64,20 @@
                             
                         </tr>
                     
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="airport.lat.label" default="Lat" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: airportInstance, field: "lat")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="airport.lng.label" default="Lng" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: airportInstance, field: "lng")}</td>
+                            
+                        </tr>
+                    
                     </tbody>
                 </table>
             </div>

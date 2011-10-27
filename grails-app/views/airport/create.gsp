@@ -23,63 +23,38 @@
                 <g:renderErrors bean="${airportInstance}" as="list" />
             </div>
             </g:hasErrors>
-            <g:form action="save" >
-                <div class="dialog">
-                    <table>
-                        <tbody>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="name"><g:message code="airport.name.label" default="Name" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: airportInstance, field: 'name', 'errors')}">
-                                    <g:textField name="name" value="${airportInstance?.name}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="iata"><g:message code="airport.iata.label" default="Iata" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: airportInstance, field: 'iata', 'errors')}">
-                                    <g:textField name="iata" maxlength="3" value="${airportInstance?.iata}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="city"><g:message code="airport.city.label" default="City" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: airportInstance, field: 'city', 'errors')}">
-                                    <g:textField name="city" value="${airportInstance?.city}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="state"><g:message code="airport.state.label" default="State" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: airportInstance, field: 'state', 'errors')}">
-                                    <g:textField name="state" maxlength="2" value="${airportInstance?.state}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="country"><g:message code="airport.country.label" default="Country" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: airportInstance, field: 'country', 'errors')}">
-                                    <g:textField name="country" value="${airportInstance?.country}" />
-                                </td>
-                            </tr>
-                        
-                        </tbody>
-                    </table>
-                </div>
-                <div class="buttons">
-                    <span class="button"><g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" /></span>
-                </div>
-            </g:form>
+            <g:form action="save" method="post" >
+			  <div class="dialog">
+			    <table>
+			      <tbody>                                         
+			        <tr class="prop">
+			          <td valign="top" class="name"><label for="iata">Iata:</label></td>
+			          <td valign="top" 
+			              class="value ${hasErrors(bean:airport,field:'iata','errors')}">
+			              <input type="text" 
+			                     maxlength="3" 
+			                     id="iata" 
+			                     name="iata" 
+			                     value="${fieldValue(bean:airport,field:'iata')}"/>
+			          </td>
+			        </tr> 
+			        <tr class="prop">
+			          <td valign="top" class="name"><label for="city">City:</label></td>
+			          <td valign="top" 
+			              class="value ${hasErrors(bean:airport,field:'city','errors')}">
+			              <input type="text" 
+			                     id="city" 
+			                     name="city" 
+			                     value="${fieldValue(bean:airport,field:'city')}"/>
+			          </td>
+			        </tr>                                                 
+			      </tbody>
+			    </table>
+			  </div>
+			  <div class="buttons">
+			    <span class="button"><input class="save" type="submit" value="Create" /></span>
+			  </div>
+			</g:form>
         </div>
     </body>
 </html>

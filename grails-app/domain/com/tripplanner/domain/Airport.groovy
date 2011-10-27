@@ -14,6 +14,8 @@ class Airport{
 	String city
 	String state
 	String country = "US"
+	String lat
+	String lng
 
 	String toString(){
 		"${iata} - ${name}"
