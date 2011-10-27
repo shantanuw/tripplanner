@@ -33,34 +33,25 @@
                                     <label for="name"><g:message code="airline.name.label" default="Name" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: airlineInstance, field: 'name', 'errors')}">
-                                    <g:textField name="name" maxlength="100" value="${airlineInstance?.name}" />
+                                    <g:textField name="name" value="${airlineInstance?.name}" />
                                 </td>
                             </tr>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="url"><g:message code="airline.url.label" default="Url" /></label>
+                                    <label for="iata"><g:message code="airline.iata.label" default="Iata" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: airlineInstance, field: 'url', 'errors')}">
-                                    <g:textField name="url" value="${airlineInstance?.url}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="frequentFlyer"><g:message code="airline.frequentFlyer.label" default="Frequent Flyer" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: airlineInstance, field: 'frequentFlyer', 'errors')}">
-                                    <g:textField name="frequentFlyer" value="${airlineInstance?.frequentFlyer}" />
+                                <td valign="top" class="value ${hasErrors(bean: airlineInstance, field: 'iata', 'errors')}">
+                                    <g:textField name="iata" maxlength="3" value="${airlineInstance?.iata}" />
                                 </td>
                             </tr>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="notes"><g:message code="airline.notes.label" default="Notes" /></label>
+                                    <label for="frequentFlier"><g:message code="airline.frequentFlier.label" default="Frequent Flier" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: airlineInstance, field: 'notes', 'errors')}">
-                                    <g:textArea name="notes" cols="40" rows="5" value="${airlineInstance?.notes}" />
+                                <td valign="top" class="value ${hasErrors(bean: airlineInstance, field: 'frequentFlier', 'errors')}">
+                                    <g:textField name="frequentFlier" value="${airlineInstance?.frequentFlier}" />
                                 </td>
                             </tr>
                         

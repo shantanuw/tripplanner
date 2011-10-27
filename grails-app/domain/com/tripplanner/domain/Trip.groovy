@@ -1,23 +1,11 @@
 package com.tripplanner.domain
 
-class Trip {
-	
-	static constraints = {
-		airline()
-		name()
-		city()
-		startDate()
-		endDate()
-		purpose()
-		notes()
-	}
-	
+class Trip{
+	static constraints = { name() }
+	static hasMany = [flights:Flight]
 	String name
-	String city
-	Date startDate
-	Date endDate
-	String purpose
-	String notes
-	
-	Airline airline
+
+	String toString(){
+		name
+	}
 }

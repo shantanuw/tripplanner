@@ -37,33 +37,26 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="airline.url.label" default="Url" /></td>
+                            <td valign="top" class="name"><g:message code="airline.iata.label" default="Iata" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: airlineInstance, field: "url")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="airline.frequentFlyer.label" default="Frequent Flyer" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: airlineInstance, field: "frequentFlyer")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: airlineInstance, field: "iata")}</td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="airline.notes.label" default="Notes" /></td>
+                            <td valign="top" class="name"><g:message code="airline.frequentFlier.label" default="Frequent Flier" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: airlineInstance, field: "notes")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: airlineInstance, field: "frequentFlier")}</td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="airline.trip.label" default="Trip" /></td>
+                            <td valign="top" class="name"><g:message code="airline.flights.label" default="Flights" /></td>
                             
                             <td valign="top" style="text-align: left;" class="value">
                                 <ul>
-                                <g:each in="${airlineInstance.trip}" var="t">
-                                    <li><g:link controller="trip" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
+                                <g:each in="${airlineInstance.flights}" var="f">
+                                    <li><g:link controller="flight" action="show" id="${f.id}">${f?.encodeAsHTML()}</g:link></li>
                                 </g:each>
                                 </ul>
                             </td>

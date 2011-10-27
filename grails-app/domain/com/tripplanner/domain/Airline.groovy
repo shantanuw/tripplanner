@@ -1,21 +1,18 @@
 package com.tripplanner.domain
 
-class Airline {
+class Airline{
 	static constraints = {
-		name(blank:false, maxSize:100)
-		url(url:true)
-		frequentFlyer(blank:true)
-		notes(maxSize:1500)
+		name()
+		iata(maxSize:3)
+		frequentFlier()
 	}
 
-	static hasMany = [trip:Trip]
-
+	static hasMany = [flights:Flight]
 	String name
-	String url
-	String frequentFlyer
-	String notes
+	String iata
+	String frequentFlier
 
 	String toString(){
-		return name
+		"${iata} - ${name}"
 	}
 }

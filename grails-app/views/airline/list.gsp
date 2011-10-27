@@ -26,11 +26,9 @@
                         
                             <g:sortableColumn property="name" title="${message(code: 'airline.name.label', default: 'Name')}" />
                         
-                            <g:sortableColumn property="url" title="${message(code: 'airline.url.label', default: 'Url')}" />
+                            <g:sortableColumn property="iata" title="${message(code: 'airline.iata.label', default: 'Iata')}" />
                         
-                            <g:sortableColumn property="frequentFlyer" title="${message(code: 'airline.frequentFlyer.label', default: 'Frequent Flyer')}" />
-                        
-                            <g:sortableColumn property="notes" title="${message(code: 'airline.notes.label', default: 'Notes')}" />
+                            <g:sortableColumn property="frequentFlier" title="${message(code: 'airline.frequentFlier.label', default: 'Frequent Flier')}" />
                         
                         </tr>
                     </thead>
@@ -42,11 +40,9 @@
                         
                             <td>${fieldValue(bean: airlineInstance, field: "name")}</td>
                         
-                            <td>${fieldValue(bean: airlineInstance, field: "url")}</td>
+                            <td>${fieldValue(bean: airlineInstance, field: "iata")}</td>
                         
-                            <td>${fieldValue(bean: airlineInstance, field: "frequentFlyer")}</td>
-                        
-                            <td>${fieldValue(bean: airlineInstance, field: "notes")}</td>
+                            <td>${fieldValue(bean: airlineInstance, field: "frequentFlier")}</td>
                         
                         </tr>
                     </g:each>
